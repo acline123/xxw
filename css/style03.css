@@ -1,0 +1,202 @@
+/* 重置所有元素 */
+*{
+    padding: 0;
+    border: 0;
+    /* 移除列表项的项目符号 */
+    list-style: none;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+
+/* 设置所有链接的样式 */
+a{
+    /* 移除链接下划线 */
+    text-decoration: none;
+    color: #000000;
+}
+
+.head{
+    width: 100%;
+    height: 86px;
+    background: url(../images/top.jpg) repeat-x;
+}
+.head_in{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+.head_in .left{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.head_in .right{
+    position: absolute;
+    right: 78px;
+    top: 13px;
+}
+
+/* 导航栏 */
+.nav{
+    width: 900px;
+    height: 76px;
+    margin: 0 auto;
+    padding-left: 80px;
+    background: url(../images/navbg.png) no-repeat;
+}
+.nav ul li{
+    float: left;
+    line-height: 45px;
+    width: 100px;
+    height: 48px;
+    text-align: center;
+}
+.nav ul li a{
+    display: block;
+    width: 100px;
+    height: 48px;
+}
+/* 设置鼠标悬浮时li的背景图 */
+.nav ul li:hover{background: url(../images/pic03.png) no-repeat;}
+.nav ul li:hover{background: url(../images/pic03.png) no-repeat;}
+
+.search-input {
+    margin-top: 8px;
+    height: 23px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 66px;
+}
+/* 大图片 */
+.tupian {
+    width: 980px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(../images/banner.jpg) no-repeat;
+}
+
+
+/* 宠物照片部分 */
+.pet-show {
+    width:100%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: url(./../images/parallax3.jpg) no-repeat;
+    /* 让背景图覆盖整个容器 */
+    background-size: cover;
+}
+
+/* 标题 */
+.show-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #090101;
+}
+.show-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.show-box {
+    width: 980px;
+    margin: 0 auto;
+}
+.slide-row {
+    display: flex;
+    justify-content: space-between;
+     gap: 15px;
+}
+.slide-item {
+    flex: 1; /* 每个项目平均分配空间 */
+    text-align: center;
+    transition: transform 0.3s ease;  /* 添加过渡效果 */
+}
+.slide-item img:hover {
+    transform: scale(1.1);  /* 放大1.1倍 */
+}
+
+/* 点赞 */
+.like-btn {
+    margin-top: 8px;
+    padding: 5px 15px;
+    background: rgb(245, 245, 186);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* 信息内容 */
+.content{
+    width: 100%;
+    height: 985px;
+    margin: 0 auto;
+    background: url(./../images/banner1.jpg);
+    background-size: cover;
+}
+/* 会员注册 */
+.content .top{
+    width: 945px;
+    height: 26px;
+    padding: 5px 0 0 35px;
+    color: #edf7d8;
+    background: url(../images/pic01.jpg) no-repeat;
+}
+.content .con {
+    padding: 50px 0 45px 250px;
+    font-size: 18px;            /* 添加字体大小 */
+
+}
+td{
+    height:55px;
+    color: #090101;
+    font-size: 18px;
+}
+tr .left{
+    width: 120px;
+    text-align: right;
+     font-size: 18px;
+}
+tr .kuang{
+     width: 310px;
+     height: 28px;
+     padding-left: 10px;
+     border: 1px solid #88be2a;
+}
+input{vertical-align: middle;}
+select{
+    width: 200px;
+    border: 2px solid #88be2a;
+    color: rgb(3, 3, 3);
+}
+textarea{
+    width: 380px;
+    border: 1px solid #484545;
+    /* 设置多行文本框输入禁止被拉伸 */
+    resize: none;         
+    font-size: 12px;
+    color: #aaa;
+    padding: 10px;
+}
+.but{
+    margin-top: 40px;
+    width: 500px;
+    height: 40px;
+    color: #13347c;
+    font-size: 20px;
+    background: url(../images/pic02.png) center  no-repeat;
+    cursor: pointer;
+}
+.banquan{
+    width: 100%;
+    height: 85px;
+    padding-top: 45px;
+    background: #ccc;
+    text-align: center;
+    color: #0f0f0f;
+}

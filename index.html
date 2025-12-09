@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="css/style03.css"/>
+    <title>宠物页面</title>
+    <link rel="icon" href="./images/mao.png">
+</head>
+<body>
+    <div class="head">
+        <div class="head_in">
+            <img class="left" src="images/logo.png" />
+            <img class="right" src="images/pic04.png" />
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="https://www.bobocw.com/">萌宠领养</a></li>
+            <li><a href="#">陈晓雯</a></li>
+            <li><a href="#">萌宠食品</a></li>
+            <li><a href="https://nicpet.cn/">宠物资讯</a></li>
+            <li class="zhuce"><a href="#register">注册会员</a></li>
+        </ul>
+        <input type="text" placeholder="25216950503:" class="search-input">
+    </div>
+
+    <!-- 大图片 -->
+    <div class="tupian"></div>
+    
+
+    <!-- 宠物照片 -->
+    <section class="pet-show">
+        <div class="show-box">
+            <h4 class="show-title">汪汪照片墙</h4>
+            <div class="show-slide">
+                <!-- 第一行 -->
+                <div class="slide-row">
+                    <div class="slide-item"><a class="pic" href="images/page-1_img04_original.jpg"><img
+                                src="images/page-1_img04.jpg"></a><button class="like-btn" data-id="img01">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img05_original.jpg"><img
+                                src="images/page-1_img05.jpg"></a><button class="like-btn" data-id="img02">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img06_original.jpg"><img
+                                src="images/page-1_img06.jpg"></a><button class="like-btn" data-id="img03">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img07_original.jpg"><img
+                                src="images/page-1_img07.jpg"></a><button class="like-btn" data-id="img04">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img08_original.jpg"><img
+                                src="images/page-1_img08.jpg"></a><button class="like-btn" data-id="img05">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img09_original.jpg"><img
+                                src="images/page-1_img09.jpg"></a><button class="like-btn" data-id="img06">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                </div>
+                <!-- 第二行 陈晓雯-->
+                <div class="slide-row">
+                    <div class="slide-item"><a class="pic" href="images/page-1_img10_original.jpg"><img
+                                src="images/page-1_img10.jpg"></a><button class="like-btn" data-id="img07">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img11_original.jpg"><img
+                                src="images/page-1_img11.jpg"></a><button class="like-btn" data-id="img08">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img12_original.jpg"><img
+                                src="images/page-1_img12.jpg"></a><button class="like-btn" data-id="img09">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img13_original.jpg"><img
+                                src="images/page-1_img13.jpg"></a><button class="like-btn" data-id="img10">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img04_original.jpg"><img
+                                src="images/page-1_img04.jpg"></a><button class="like-btn" data-id="img11">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                    <div class="slide-item"><a class="pic" href="images/page-1_img05_original.jpg"><img
+                                src="images/page-1_img05.jpg"></a><button class="like-btn" data-id="img12">❤️ 点赞 <span
+                                class="count">0</span></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会员内容 -->
+    <div class="content" id="register">
+        <div class="top">会员注册</div>
+        <form action="#" method="post" id="formMember">
+            <table class="con">
+                <tr>
+                    <td class="left">昵称:</td>
+                    <td><input type="text" class="kuang" id="nickname"></td>
+                </tr>
+                <tr>
+                    <td class="left">手机:</td>
+                    <td><input type="text" class="kuang" id="phone"></td>
+                </tr>
+                <tr>
+                    <td class="left">设置密码:</td>
+                    <td><input type="password" maxlength="8" class="kuang"></td>
+                </tr>
+                <tr>
+                    <td class="left">确认密码:</td>
+                    <td><input type="password" maxlength="8" class="kuang"></td>
+                </tr>
+            </table>
+        </form>
+    
+        <!-- 宠物内容 -->
+        <div class="top">宠物信息</div>
+        <form action="#" method="post" id="formPet">
+            <table class="con">
+                <tr>
+                    <td class="left">所属种类:</td>
+                    <td>
+                        <select>
+                            <option>-请选择-</option>
+                            <option>狗</option>
+                            <option>猫</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <!-- 性别 -->
+                <tr>
+                    <td class="left">性别:</td>
+                    <td>
+                        <label for="boy"><input type="radio" name="sex" id="boy">男</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="girl"><input type="radio" name="sex" id="girl">女</label>
+                    </td>
+                </tr>
+    
+                <!-- 年龄 -->
+                <tr>
+                    <td class="left">年龄:</td>
+                    <td>
+                        <select>
+                            <option selected="selected">-请选择-</option>
+                            <option>1岁</option>
+                            <option>2岁</option>
+                            <option>3岁</option>
+                            <option>4岁</option>
+                            <option>5岁</option>
+                            <option>6岁</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <!-- 备注 -->
+                <tr>
+                    <td class="left">备注:</td>
+                    <td>
+                        <textarea cols="60" rows="8">请填写备注内容:</textarea>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2"><input type="button" value="完成注册" class="but"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+    <!-- 版权信息 -->
+    <div class="banquan">Copyright @ 25计科-25216950503 chenxiaowen-com,all rights reserved.
+        <br />2025 ,仅用于学习 陈晓雯 25216950503备
+    </div>
+</body>
+</html>
+<script src="./js/s.js"></script>
