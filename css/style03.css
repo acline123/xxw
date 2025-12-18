@@ -94,13 +94,13 @@ a{
 .show-title {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 25px;         /* 底部外边距25像素 */
     color: #090101;
 }
 .show-slide {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;      /* 主轴方向：垂直（从上到下） */
+    align-items: center;         /* 交叉轴对齐：居中（水平居中） */
     gap: 20px;
 }
 .show-box {
@@ -108,7 +108,7 @@ a{
     margin: 0 auto;
 }
 .slide-row {
-    display: flex;
+    display: flex;                 /* 主轴对齐：两端对齐 */
     justify-content: space-between;
      gap: 15px;
 }
