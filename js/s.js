@@ -105,10 +105,27 @@ function setupLikeFunction() {
 
 document.querySelector('.search-input').addEventListener('keypress', function(e) {
     if(e.key === 'Enter') {
-        const keyword = this.value;
-        if(keyword) {
-            alert(`搜索关键词: ${keyword}\n（实际项目中这里会跳转到搜索结果页）`);
-            // 这里可以添加实际搜索逻辑
+        const keyword = this.value.trim().toLowerCase();
+        
+        // 跳转到汪汪照片墙
+        if(keyword.includes('照片') || keyword.includes('汪汪') || keyword.includes('宠物') || keyword.includes('点赞')) {
+            document.querySelector('.pet-show').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+        // 跳转到会员注册
+        } else if(keyword.includes('注册') || keyword.includes('会员')) {
+            document.querySelector('#register').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+        } else if(keyword) {
+            // 其他关键词提示
+            alert(`搜索关键词: ${keyword}\n提示：可以搜索"照片墙"查看宠物照片，或搜索"会员注册"进行登记`);
         }
+        
+        this.value = '';
     }
 });

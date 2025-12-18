@@ -47,14 +47,14 @@ a{
     background: url(../images/navbg.png) no-repeat;
 }
 .nav ul li{
-    float: left;
-    line-height: 45px;
+    float: left;             /* 横向排列 */
+    line-height: 45px;       /* 垂直居中 */
     width: 100px;
     height: 48px;
     text-align: center;
 }
 .nav ul li a{
-    display: block;
+    display: block;         /* 让a标签填满li */
     width: 100px;
     height: 48px;
 }
