@@ -91,9 +91,8 @@ function setupLikeFunction() {
             let currentCount = parseInt(countSpan.textContent) || 0;
             currentCount++;
             countSpan.textContent = currentCount;
-            
+
             // 视觉反馈
-            // this.style.background = '#ff4444';
             this.style.color = 'black';
             setTimeout(() => {
                 this.style.background = '';
@@ -103,6 +102,7 @@ function setupLikeFunction() {
     });
 }
 
+// 监听搜索框的 keypress 事件并识别到回车键（e.key === 'Enter'）
 document.querySelector('.search-input').addEventListener('keypress', function(e) {
     if(e.key === 'Enter') {
         const keyword = this.value.trim().toLowerCase();
@@ -110,7 +110,7 @@ document.querySelector('.search-input').addEventListener('keypress', function(e)
         // 跳转到汪汪照片墙
         if(keyword.includes('照片') || keyword.includes('汪汪') || keyword.includes('宠物') || keyword.includes('点赞')) {
             document.querySelector('.pet-show').scrollIntoView({
-                behavior: 'smooth',
+                behavior: 'smooth',          //这是实现平滑效果的关键
                 block: 'start'
             });
             
@@ -118,7 +118,7 @@ document.querySelector('.search-input').addEventListener('keypress', function(e)
         } else if(keyword.includes('注册') || keyword.includes('会员')) {
             document.querySelector('#register').scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'
+                block: 'start'             // 这个参数控制元素在视口中的垂直对齐方式
             });
             
         } else if(keyword) {
