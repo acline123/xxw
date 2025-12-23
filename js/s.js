@@ -11,7 +11,8 @@ window.onload = function() {
         submitButton.onclick = function() {
             console.log("用户点击了注册按钮");
             
-            // 获取表单数据
+            // 在点击注册按钮时，使用 document.getElementById 
+            // 或 querySelector获取表单数据，.value 属性读取用户输入的内容
             const nickname = document.getElementById('nickname').value;
             const phone = document.getElementById('phone').value;
             const petType = document.querySelector('select').value;

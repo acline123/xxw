@@ -5,6 +5,9 @@
     /* 移除列表项的项目符号 */
     list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: "微软雅黑";
     font-size: 16px;
@@ -33,7 +36,7 @@ a{
     top: 5px;
 }
 .head_in .right{
-    position: absolute;
+    position: absolute;        /*  给狗狗图片绝对定位 */
     right: 78px;
     top: 13px;
 }
@@ -99,7 +102,7 @@ a{
 }
 .show-slide {
     display: flex;
-    flex-direction: column;      /* 主轴方向：垂直（从上到下） */
+    flex-direction: column;      /*   主轴方向：垂直（从上到下） */
     align-items: center;         /* 交叉轴对齐：居中（水平居中） */
     gap: 20px;
 }
@@ -108,14 +111,14 @@ a{
     margin: 0 auto;
 }
 .slide-row {
-    display: flex;                 /* 主轴对齐：两端对齐 */
+    display: flex;                /*  主轴对齐：两端对齐 */
     justify-content: space-between;
      gap: 15px;
 }
 .slide-item {
     flex: 1; /* 每个项目平均分配空间 */
     text-align: center;
-    transition: transform 0.3s ease;  /* 添加过渡效果 */
+    transition: transform 0.3s ease;  /* 添加过渡效果0.3秒 */
 }
 .slide-item img:hover {
     transform: scale(1.1);  /* 放大1.1倍 */
