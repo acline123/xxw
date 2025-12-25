@@ -30,6 +30,7 @@ window.onload = function() {
             
             // 获取年龄
             const ageSelect = document.querySelectorAll('select')[1];
+            // 成功获取到下拉框，就读取它的 value,没有获取到，就返回空字符串
             const petAge = ageSelect ? ageSelect.value : '';
             
             // 简单验证
@@ -79,26 +80,25 @@ window.onload = function() {
 
 
 function setupLikeFunction() {
+    // 点赞功能的实现是通过 JS 获取所有带 .like-btn 类的按钮
     const likeBtns = document.querySelectorAll('.like-btn');
     
     likeBtns.forEach((btn, index) => {
         // 确保每个按钮有唯一ID
         if (!btn.hasAttribute('data-id')) {
+            // 每个按钮生成一个不同的编号
             btn.setAttribute('data-id', 'img' + (index + 1));
         }
         
         btn.onclick = function() {
+            // 点击按钮时，首先获取按钮内部显示点赞数的 <span class="count">
             const countSpan = this.querySelector('.count');
+            // 获取当前点赞数,通过 parseInt 转成整数转换失败或为空，就默认使用 0
             let currentCount = parseInt(countSpan.textContent) || 0;
+             // 更新点赞数显示
             currentCount++;
             countSpan.textContent = currentCount;
 
-            // 视觉反馈
-            this.style.color = 'black';
-            setTimeout(() => {
-                this.style.background = '';
-                this.style.color = '';
-            }, 300);
         };
     });
 }
@@ -119,14 +119,14 @@ document.querySelector('.search-input').addEventListener('keypress', function(e)
         } else if(keyword.includes('注册') || keyword.includes('会员')) {
             document.querySelector('#register').scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'             // 这个参数控制元素在视口中的垂直对齐方式
+                block: 'start'             // 控制元素在视口中的垂直对齐方式
             });
             
         } else if(keyword) {
             // 其他关键词提示
             alert(`搜索关键词: ${keyword}\n提示：可以搜索"照片墙"查看宠物照片，或搜索"会员注册"进行登记`);
         }
-        
+        // 清空当前输入框里的内容
         this.value = '';
     }
 });

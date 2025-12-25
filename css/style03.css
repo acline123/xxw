@@ -51,7 +51,7 @@ a{
 }
 .nav ul li{
     float: left;             /* 横向排列 */
-    line-height: 45px;       /* 垂直居中 */
+    line-height: 45px;      /*   垂直居中 */
     width: 100px;
     height: 48px;
     text-align: center;
@@ -193,6 +193,7 @@ textarea{
     color: #13347c;
     font-size: 20px;
     background: url(../images/pic02.png) center  no-repeat;
+    /* 当鼠标移动到该元素上时，鼠标指针变成手型 */
     cursor: pointer;
 }
 .banquan{
